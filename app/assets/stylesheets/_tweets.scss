@@ -24,8 +24,9 @@
 }
 .middle{
   height: calc(100vh - 230px);
-  width: 100%;
+  width: calc(100% - 30px);
   background-color: brown;
+  padding-left: 30px;
 }
 .footer__contents1{
   border-left : solid 3px #333;
