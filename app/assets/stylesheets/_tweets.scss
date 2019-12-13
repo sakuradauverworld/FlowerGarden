@@ -1,0 +1,87 @@
+@mixin foot {
+  height: 100px;
+  width: calc(20% - 2.6px);
+  background-color: chartreuse;
+  float: left;
+  border-top : solid 2px #333;
+  border-bottom : solid 2px #333;
+  border-right : solid 2px #333;
+}
+@mixin foot__text{
+  text-align: center;
+  font-size: 25px;
+}
+.header{
+  height: 130px;
+  width: 100%;
+  background-color: yellow;
+}
+.title{
+  padding-top: 20px;
+  font-size: 70px;
+  font-weight: bold;
+  text-align: center;
+}
+.middle{
+  height: calc(100vh - 230px);
+  width: 100%;
+  background-color: brown;
+}
+.footer__contents1{
+  border-left : solid 3px #333;
+  &__text{
+  @include foot__text
+         }
+  &__input{
+    text-align: right;
+          }
+  @include foot
+}
+input
+{
+ background-color: chartreuse;
+ text-align: left;
+}
+.footer__contents2{
+  &__text{
+  @include foot__text
+         }
+  &__input{
+  text-align: right;
+          }
+  @include foot
+}
+#height_box{
+  text-align: right;
+  font-weight: bold;
+}
+#weight_box{
+  text-align: right;
+  font-weight: bold;
+}
+#idealweight_box{
+  text-align: right;
+  font-weight: bold;
+}
+.footer__contents3{
+  &__text{
+  @include foot__text
+         }
+  &__input{
+  text-align: right;
+          }
+  @include foot
+}
+.footer__contents4{
+  &__text{
+  @include foot__text
+         }
+  @include foot
+ 
+}
+.footer__contents5{
+  &__text{
+  @include foot__text
+         }
+  @include foot
+}

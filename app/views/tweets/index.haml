@@ -1,0 +1,45 @@
+
+.all
+  .header
+    .title
+      ダイエットフラワー
+  .middle
+    .middle__contents1
+  .footer
+    = form_with model: @product, remote: true do |f|
+      .footer__contents1
+        .footer__contents1__text
+          身長
+        .footer__contents1__input
+          = f.text_field :name,size: "5px", placeholder: "",id: "height"
+          cm
+      .footer__contents2
+        .footer__contents2__text
+          現在の体重
+        .footer__contents2__input
+          = f.text_field :name,size: "5px", placeholder: "",id: "weight"
+          kg
+      .footer__contents3
+        .footer__contents3__text
+          理想の体重
+        .footer__contents3__input
+          = f.text_field :name,size: "5px", placeholder: "",id: "idealweight"
+          kg
+      .footer__contents4
+        .footer__contents4__text
+          %input#ideal{:type => "button", :value => "達成率を計算"}
+          #box4
+      .footer__contents5
+        .footer__contents5__text
+          %input#calc{:type => "button", :value => "BMIを計算"}
+          #box5
+
+  
+
+
+
+
+        
+    
+
+      
