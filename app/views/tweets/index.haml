@@ -1,10 +1,41 @@
 
 .all
   .header
+    .subtitle
+      努力で咲かせ！
     .title
-      ダイエットフラワー
+      Flower garden
   .middle
     .middle__contents1
+      %span.image
+        = image_tag src="/assets/flower_marigold.png", size: "170x160", id: "marigold"
+        = image_tag src="/assets/flower_kikyou.png", size: "170x160",id: "kikyou"
+        = image_tag src="/assets/flower_tulip.png", size: "170x160",id:"tulip"
+        = image_tag src="/assets/flower_hyacinth.png", size: "170x160",id:"hyacinth"
+        = image_tag src="/assets/flower_amaryllis.png", size: "170x160",id:"amaryllis"
+        = image_tag src="/assets/flower_himekaiu_calla.png", size: "170x160",id:"calla"
+        = image_tag src="/assets/flower_sandersonia.png", size: "170x160",id:"sandersonia"
+        = image_tag src="/assets/flower_gaku_ajisai.png", size: "170x160",id:"ajisai"
+        %br
+        = image_tag src="/assets/flower_whitelaceflower.png", size: "150x160",id:"whitelaceflower"
+        = image_tag src="/assets/flower_blue_bonnet.png", size: "150x160",id:"blue_bonnet"
+        = image_tag src="/assets/herb_geranium.png", size: "150x160",id:"geranium"
+        = image_tag src="/assets/flower_ayame.png", size: "150x160",id:"ayame"
+        = image_tag src="/assets/flower_tsubuwaki.png", size: "150x160",id:"tsubuwaki"
+        = image_tag src="/assets/flower_christmas_rose.png", size: "150x160",id:"christmas_rose"
+        = image_tag src="/assets/flower_rindou.png", size: "150x160",id:"rindou"
+        = image_tag src="/assets/flower_syakunage.png", size: "150x160",id:"syakunage"
+        = image_tag src="/assets/flower_shiroinunazuna", size: "150x160",id:"shiroinunazuna"
+        = image_tag src="/assets/flower_katakuri.png", size: "170x160",id:"katakuri"
+        = image_tag src="/assets/plant_flower_seitaka_awadachisou.png", size: "170x160",id:"seitaka_awadachisou"
+        = image_tag src="/assets/flower_nadeshiko.png", size: "170x160",id:"nadeshiko"
+        = image_tag src="/assets/flower_anthurium.png", size: "170x160",id:"anthurium"
+        = image_tag src="/assets/flower_rose_rainbow.png", size: "170x160",id:"rose_rainbow"
+        = image_tag src="/assets/flower_syakoba_saboten.png", size: "170x160",id:"syakoba_saboten"
+        = image_tag src="/assets/flower_nemophila.png", size: "170x160",id:"nemophila"
+        = image_tag src="/assets/flower_kalmia_karumia.png", size: "170x160",id:"kalmia_karumia"
+        
+        
   .footer
     = form_with model: @product, remote: true do |f|
       .footer__contents1
