@@ -14,13 +14,20 @@
 .header{
   height: 130px;
   width: 100%;
-  background-color: yellow;
+  background-image: url("/assets/bg_himawari_hatake_wide.jpg");
 }
-.title{
-  padding-top: 20px;
-  font-size: 70px;
+.subtitle{
+  font-size: 30px;
   font-weight: bold;
   text-align: center;
+  padding-top: 10px;
+  color: orangered;
+}
+.title{
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  color: #DA8E00;
 }
 .middle{
   height: calc(100vh - 230px);
@@ -41,7 +48,7 @@
 input
 {
  background-color: chartreuse;
- text-align: left;
+ text-align: right;
 }
 .footer__contents2{
   &__text{
@@ -86,3 +93,9 @@ input
          }
   @include foot
 }
+#marigold,#kikyou,#tulip,#hyacinth,#amaryllis,#calla,#sandersonia,#ajisai,#whitelaceflower,#blue_bonnet,#geranium,#ayame,#tsubuwaki,#christmas_rose,#rindou,#syakunage,#shiroinunazuna,#katakuri,#seitaka_awadachisou,#nadeshiko,#anthurium,#rose_rainbow,#syakoba_saboten,#nemophila,#kalmia_karumia{
+  display: none;
+}
+
+
+
