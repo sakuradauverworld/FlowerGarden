@@ -16,17 +16,19 @@
   width: 100%;
   background-image: url("/assets/bg_himawari_hatake_wide.jpg");
 }
+.how{
+  float: left;
+}
 .subtitle{
   font-size: 30px;
   font-weight: bold;
-  text-align: center;
   padding-top: 10px;
   color: orangered;
+  text-indent: 80px;
 }
 .title{
   font-size: 50px;
   font-weight: bold;
-  text-align: center;
   color: #DA8E00;
 }
 .middle{
@@ -95,6 +97,27 @@ input
 }
 #marigold,#kikyou,#tulip,#hyacinth,#amaryllis,#calla,#sandersonia,#ajisai,#whitelaceflower,#blue_bonnet,#geranium,#ayame,#tsubuwaki,#christmas_rose,#rindou,#syakunage,#shiroinunazuna,#katakuri,#seitaka_awadachisou,#nadeshiko,#anthurium,#rose_rainbow,#syakoba_saboten,#nemophila,#kalmia_karumia{
   display: none;
+}
+
+.rank1,.rank2,.rank3,.rank4,.rank5,.rank6
+{
+  display: none;
+}
+
+.rank1{
+  color: blue;
+}
+
+.rank2{
+  color: steelblue;
+}
+
+.rank3,.rank4{
+  color: coral;
+}
+
+.rank5,.rank6{
+  color: red;
 }
 
 
