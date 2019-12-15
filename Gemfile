@@ -51,11 +51,13 @@ group :development do
 end
 
 group :test do
+  gem 'sqlite3'
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
+  
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -69,5 +71,8 @@ gem 'erb2haml'
 gem 'jquery-rails'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', group: [:development, :test]
-gem 'pg', group: :production
+
+group :production do
+  gem 'pg'
+end
+# sqlite3
