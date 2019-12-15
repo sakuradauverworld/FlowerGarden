@@ -67,3 +67,7 @@ gem 'sprockets', '3.7.2'
 gem 'haml-rails'
 gem 'erb2haml'
 gem 'jquery-rails'
+
+# Use sqlite3 as the database for Active Record
+gem 'sqlite3', group: [:development, :test]
+gem 'pg', group: :production
