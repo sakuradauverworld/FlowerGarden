@@ -1,4 +1,60 @@
 $(function(){
+  $(function(){
+    $(".footer__contents5__text").click( function(){
+      var h = Number($("#height").val());
+      var w = Number($("#weight").val());
+      var p = ( w / ( (h / 100) * (h / 100) ) );
+      var q = Math.round(p * 10)/ 10
+      if(q < 18.5){
+        $(".rank1").css("display","inline-block").fadeIn()
+        $(".rank2").css("display","none")
+        $(".rank3").css("display","none")
+        $(".rank4").css("display","none")
+        $(".rank5").css("display","none")
+        $(".rank6").css("display","none")
+      }
+       if(18.5 < q ){
+        $(".rank2").css("display","inline-block").fadeIn()
+        $(".rank1").css("display","none")
+        $(".rank3").css("display","none")
+        $(".rank4").css("display","none")
+        $(".rank5").css("display","none")
+        $(".rank6").css("display","none")
+        }
+       if(25 < q ){
+        $(".rank3").css("display","inline-block").fadeIn()
+        $(".rank1").css("display","none")
+        $(".rank2").css("display","none")
+        $(".rank4").css("display","none")
+        $(".rank5").css("display","none")
+        $(".rank6").css("display","none")
+        }
+       if(30 < q ){
+        $(".rank4").css("display","inline-block").fadeIn()
+        $(".rank1").css("display","none")
+        $(".rank2").css("display","none")
+        $(".rank3").css("display","none")
+        $(".rank5").css("display","none")
+        $(".rank6").css("display","none")
+        }
+       if(35 < q ){
+        $(".rank5").css("display","inline-block").fadeIn()
+        $(".rank1").css("display","none")
+        $(".rank2").css("display","none")
+        $(".rank3").css("display","none")
+        $(".rank4").css("display","none")
+        $(".rank6").css("display","none")
+        }
+      if(40 < q) {
+        $(".rank6").css("display","inline-block").fadeIn()
+        $(".rank1").css("display","none")
+        $(".rank2").css("display","none")
+        $(".rank3").css("display","none")
+        $(".rank4").css("display","none")
+        $(".rank5").css("display","none")
+        }
+    });
+  });
  
   $(function(){
     $(".footer__contents5__text").click( function(){
@@ -113,5 +169,7 @@ $(function(){
      }
   });
   });
-  
+
+
+
 });
