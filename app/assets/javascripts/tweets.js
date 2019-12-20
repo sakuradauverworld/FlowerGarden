@@ -92,6 +92,9 @@ $(function(){
       var z = Math.round(g * 10)/ 10
       var d = i / w * 100
       var h = Math.round(d * 10)/ 10
+     if (z >= 0 && h >= 0){
+      $("#marigold,#kikyou,#tulip,#hyacinth,#amaryllis,#calla,#sandersonia,#ajisai,#whitelaceflower,#blue_bonnet,#geranium,#ayame,#tsubuwaki,#christmas_rose,#rindou,#syakunage,#shiroinunazuna,#katakuri,#seitaka_awadachisou,#nadeshiko,#anthurium,#rose_rainbow,#syakoba_saboten,#nemophila,#kalmia_karumia").css("display","none")
+     }
      if (z >= 4 && h >= 4){
       $("#marigold").fadeIn()
      }
@@ -169,7 +172,5 @@ $(function(){
      }
   });
   });
-
-
 
 });
